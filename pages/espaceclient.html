@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire de demande</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h2 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		form {
+			margin: 0 auto;
+			width: 50%;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 0px 5px #ccc;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input, select, textarea {
+			display: block;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			padding: 10px 20px;
+			font-size: 16px;
+			border-radius: 3px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Formulaire de demande</h2>
+
+	<form action="#" method="post">
+
+		<label for="telephone">Numéro de téléphone :</label>
+		<input type="tel" id="telephone" name="telephone" required>
+
+		<label for="email">Adresse e-mail :</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="choix">Choix :</label>
+		<select id="choix" name="choix">
+			<option value="programme desktop">Programme desktop</option>
+			<option value="site web">Site web</option>
+			<option value="logo et design">Logo et design</option>
+		</select>
+
+		<label for="description">Description :</label>
+		<textarea id="description" name="description" rows="5" cols="50"></textarea>
+
+		<input type="submit" value="Envoyer">
+
+	</form>
+
+</body>
+</html>
